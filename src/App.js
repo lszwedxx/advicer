@@ -14,12 +14,10 @@ function App() {
     }, 2000);
   };
   const fetchData = () => {
-    setTimeout(() => {
-      fetch('https://api.adviceslip.com/advice')
-        .then((data) => data.json())
-        .then((data) => setAdvice(data))
-        .catch((err) => console.error(err));
-    }, 200);
+    fetch('https://api.adviceslip.com/advice')
+      .then((data) => data.json())
+      .then((data) => setAdvice(data))
+      .catch((err) => console.error(err));
   };
   useEffect(() => {
     fetchData();

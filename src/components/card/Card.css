@@ -1,9 +1,8 @@
 .container {
-  margin: auto;
   width: 85%;
-  max-width: 500px;
+  max-width: 600px;
   height: 300px;
-  perspective: 1000px;
+  perspective: 700px;
 }
 .card {
   width: 100%;
@@ -11,20 +10,22 @@
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
   background: rgb(63, 63, 83);
   border-radius: 15px;
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: all 1s;
+  transition: all 0.9s ease-out;
 }
 .card__wrapper {
   position: absolute;
   height: 70%;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transform-style: preserve-3d;
 }
 .card__wrapper--front {
   backface-visibility: hidden;
@@ -37,19 +38,28 @@
   font-size: 22px;
   font-family: serif;
   text-align: center;
-  padding: 10px;
+  transform: translateZ(50px);
 }
 .card__id {
   color: #53fdad;
   text-transform: uppercase;
   font-size: 12px;
+  transform: translateZ(50px);
 }
-
+.card__img {
+  transform: translateZ(45px);
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .container {
+    height: 270px;
+    width: 70%;
+  }
+}
 @media (min-width: 768px) {
-  .card {
+  .container {
     height: 350px;
   }
   .card__advice {
-    font-size: 35px;
+    font-size: 30px;
   }
 }

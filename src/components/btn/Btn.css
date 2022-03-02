@@ -9,6 +9,10 @@
   border: none;
   background: #53fdad;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background: #04a158;
 }
 @media (min-width: 768px) {
   .btn {
