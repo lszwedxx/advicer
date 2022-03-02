@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Advicer Card
+
+![Screen](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/syo43ktrlu3huqaqye2c.jpg)
+Created by create-react-app
+
+[Design](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+
+[Live](https://brave-torvalds-363308.netlify.app)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
